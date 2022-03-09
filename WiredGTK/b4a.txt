@@ -1,0 +1,17 @@
+class Handler(usercontrol):
+	#WiredEvent def framecomplete(self,value)	#add more events 
+	
+	#WiredProperty 'LineColor': '(0.17,0.96,0.14,1)'
+	#WiredProperty 'LineThickness': '1'
+	#WiredProperty 'BG_Color': '(0,0,0,1)'
+	#WiredProperty 'VPP': '5'
+	@property
+	@LineColor.setter
+	@property
+	@LineThickness.setter
+	@property
+	@BG_Color.setter
+	@property
+	@VPP.setter
+	pass
+

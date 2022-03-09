@@ -1,0 +1,198 @@
+﻿Build1=Default,b4a.OPTUMizerPatient
+File1=AppointmentsSubModule-6e904.png
+File10=HomeModule-809c8.png
+File11=ic_cached_white_24dp.png
+File12=ic_done_white_24dp.png
+File13=Layout1.bal
+File14=LoginModule-bf106.png
+File15=MedicationsSubModule-6e7dd.png
+File16=NewsModule-9b7ab.png
+File17=PatientLogsModule-0beda.png
+File18=pics1.png
+File19=poweroff.png
+File2=bt.png
+File20=ProfileSubModule-783e7.png
+File21=QRCodeSubModule-77ea9.png
+File22=ScheduleSubModule-004a0.png
+File3=datus.csv
+File4=datus2.csv
+File5=finddriver.png
+File6=finddriver1.png
+File7=finddriver2.png
+File8=frmsplash.jpg
+File9=frmusercontrol.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=core
+Library2=stringutils
+Library3=phone
+Library4=serial
+Library5=randomaccessfile
+Library6=network
+Library7=gps
+Library8=xui
+Library9=runtimepermissions
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="28"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~SetApplicationAttribute(android:theme, "@style/LightTheme")~\n~CreateResource(values, colors.xml,~\n~<resources>~\n~    <color name="actionbar">#ff039be5</color>~\n~	<color name="statusbar">#ff006db3</color>~\n~	<color name="textColorPrimary">#ffffffff</color>~\n~	<color name="navigationBar">#ff006db3</color>~\n~</resources>~\n~)~\n~CreateResource(values-v20, theme.xml,~\n~<resources>~\n~    <style name="LightTheme" parent="@android:style/Theme.Material.Light">~\n~		 <item name="android:colorPrimary">@color/actionbar</item>~\n~		 <item name="android:colorPrimaryDark">@color/statusbar</item>~\n~		 <item name="android:textColorPrimary">@color/textColorPrimary</item>~\n~		 <item name="android:navigationBarColor">@color/navigationBar</item>~\n~    </style>~\n~</resources>~\n~)~\n~CreateResource(values-v14, theme.xml,~\n~<resources>~\n~    <style name="LightTheme" parent="@android:style/Theme.Holo.Light">~\n~		<item name="android:actionBarStyle">@style/CustomActionBarStyle</item>~\n~    </style>~\n~	<style name="CustomActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">~\n~	    <item name="android:background">@color/actionbar</item>~\n~	</style>~\n~</resources>~\n~)~\n~~\n~
+Module1=bluetooth
+Module10=PLogs
+Module11=PMedication
+Module12=PProfile
+Module13=PQr
+Module14=PSchedule
+Module15=PUpdates
+Module16=Starter
+Module17=Table
+Module18=vb6
+Module19=WTAServer
+Module2=clsParser
+Module3=frmcontrols
+Module4=frmsplash
+Module5=frmstay
+Module6=objdetect
+Module7=PAppointment
+Module8=PHome
+Module9=PLogin
+NumberOfFiles=22
+NumberOfLibraries=9
+NumberOfModules=19
+Version=9.801
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: OPTUMizer Patient
+	#VersionCode: 1
+	#VersionName: 
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+#Region  Activity Attributes 
+	#FullScreen: True
+	#IncludeTitle: False
+	
+#End Region
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private xui As XUI
+End Sub
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Private bluetooth1 As bluetooth
+	'Private frmusercontrol1 As frmusercontrol
+	Private frmsplash1 As frmsplash
+	Private frmcontrols1 As frmcontrols
+	'Private frmpatient1 As frmpatient'''
+	Private Plogin1 As PLogin                 '1
+	Private PHome1 As PHome                   '2
+	Private PProfile1 As PProfile             '3
+	Private PQr1 As PQr                       '4
+	Private PSchedule1 As PSchedule           '5
+	Private PAppointment1 As PAppointment     '6
+	Private PUpdates1 As PUpdates             '7
+	Private PLogs1 As PLogs                   '8
+	Private PMedication1 As PMedication       '9
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	If FirstTime=True Then
+		
+		Activity.LoadLayout("Layout1")
+		'Activity.AddMenuItem3("", "refresh", xui.LoadBitmapResize(File.DirAssets, "ic_cached_white_24dp.png", 32dip, 32dip, True), True)
+		'Activity.AddMenuItem3("", "done", xui.LoadBitmapResize(File.DirAssets, "ic_done_white_24dp.png", 32dip, 32dip, True), True)
+		'Activity.AddMenuItem3("", "blue", xui.LoadBitmapResize(File.DirAssets, "bt.png", 32dip, 32dip, True), True)
+		Activity.Title=""
+		bluetooth1.SetLayout(0,0,100%x,100%y)
+		frmcontrols1.SetLayout(0,0,100%x,100%y)
+		bluetooth1.Visible=False
+		frmcontrols1.Visible=False
+		frmsplash1.SetLayout(0,0,100%x,100%y)
+		frmsplash1.Visible=False
+		'frmpatient1.SetLayout(0,0,100%x,100%y)'''
+		'frmpatient1.Visible=True'''
+		Plogin1.SetLayout(0,0,100%x,100%y)        '1
+		Plogin1.Visible=True
+		PHome1.SetLayout(0,0,100%x,100%y)         '2
+		PHome1.Visible=False
+		PProfile1.SetLayout(0,0,100%x,100%y)      '3
+		PProfile1.Visible=False
+		PQr1.SetLayout(0,0,100%x,100%y)           '4
+		PQr1.Visible=False
+		PSchedule1.SetLayout(0,0,100%x,100%y)     '5
+		PSchedule1.Visible=False
+		PAppointment1.SetLayout(0,0,100%x,100%y)  '6
+		PAppointment1.Visible=False
+		PUpdates1.SetLayout(0,0,100%x,100%y)      '7
+		PUpdates1.Visible=False
+		PLogs1.SetLayout(0,0,100%x,100%y)         '8
+		PLogs1.Visible=False
+		PMedication1.SetLayout(0,0,100%x,100%y)   '9
+		PMedication1.Visible=False
+	End If
+End Sub
+Sub refresh_click()
+	frmsplash1.Visible=False
+	frmcontrols1.Visible=True
+End Sub
+Sub done_click()
+	frmsplash1.Visible=True
+	frmcontrols1.Visible=False
+End Sub
+Sub blue_click()
+	If Starter.connected_BT=False Then
+		bluetooth1.imgconnect_click
+	Else
+		Starter.mnuDisconnect_Click
+	End If	
+End Sub
+Sub Activity_Resume
+	'ToastMessageShow("resume",False)
+	Starter.frmcontrols1=frmcontrols1
+	Starter.bluetoothview1=bluetooth1
+	'Starter.frmsplash1=frmsplash1
+	'Starter.frmpatient1=frmpatient1'''
+	Starter.Plogin1=Plogin1              '1
+	Starter.PHome1=PHome1                '2
+	Starter.PProfile1=PProfile1          '3
+	Starter.PQr1=PQr1                    '4
+	Starter.PSchedule1=PSchedule1        '5
+	Starter.PAppointment1=PAppointment1  '6
+	Starter.PUpdates1=PUpdates1          '7
+	Starter.PLogs1=PLogs1                '8
+	Starter.PMedication1=PMedication1    '9
+	bluetooth1.check_bluetooth'warn user to turn on bluetooth
+	If Starter.customview.Size=0 Then
+		Starter.bluetoothview1=bluetooth1
+		Starter.rp.CheckAndRequest(Starter.rp.PERMISSION_WRITE_EXTERNAL_STORAGE)
+		Wait For Activity_PermissionResult (Permission As String, Result As Boolean)
+	End If
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	'ToastMessageShow("pause : " & UserClosed,False)
+	If UserClosed=True Then
+		ExitApplication
+	End If
+End Sub
+

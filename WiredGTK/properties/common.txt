@@ -1,0 +1,101 @@
+#Common Widget
+ActiveX
+Button
+Label
+Entry
+TextView
+SourceView
+Calendar
+ComboBoxText
+Image
+SpinButton
+CheckButton
+RadioButton
+HScrollbar
+VScrollbar
+Switch
+Layout
+Frame
+Viewport
+DrawingArea
+EventBox
+TreeView
+ProgressBar
+
+#Common Event
+
+"button-press-event","self,event,e"
+"button-release-event","self,event,e"
+"clicked","self,e"
+"changed","self,e"
+"key-press-event","self,event,e"
+"key-release-event","self,event,e"
+"motion-notify-event","self,event,e"
+"change-value","self,*args"
+"leave-notify-event","self,*args"
+"enter-notify-event","self,*args"
+"scroll-event","self,*args"
+
+#Widget ScrolledWindow
+
+#Event
+
+"edge-overshot","self,*args"
+"edge-reached","self,*args"
+"move-focus-out","self,*args"
+"scroll-child","self,*args"
+
+
+#Widget Entry
+
+#Event
+"insert-text","self,entry, text, length, position"
+
+#Widget LinkButton
+
+#Event
+"activate-link","self,*args"
+
+#Widget Layout
+
+#Event
+"draw","self,widget,surface"
+
+#Widget TextView
+"paste-clipboard","self,user_data"
+
+#Widget ComboBoxText
+
+#Event
+"popdown","self,e"
+"popup","self,e"
+
+#Widget DrawingArea
+
+#Event
+"draw","self,wid, cr"
+"realize","self, widget, data=None"
+
+#Widget ListBox
+
+#Event 
+"row-activated","self,wid, row"
+"select-all","self,wid"
+"selected-rows-changed","self,wid"
+"activate","self,wid"
+
+#Widget CheckButton
+
+#Event 
+"toggled","self,widget"
+
+#Widget RadioButton
+
+#Event 
+"toggled","self,widget"
+
+#Widget Switch
+
+#Event 
+"state-set","self,*args"
+"activate","self,*args"

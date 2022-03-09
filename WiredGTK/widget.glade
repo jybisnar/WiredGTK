@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkWindow" id="window1">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLayout" id="usercontrol">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLayout" id="layout2">
+                <property name="width_request">1000</property>
+                <property name="height_request">1000</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkEventBox" id="eventbox1">
+                    <property name="width_request">100</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_STRUCTURE_MASK</property>
+                    <signal name="button-press-event" handler="eventbox1_button_press_event_cb" swapped="no"/>
+                    <signal name="key-release-event" handler="eventbox1_key_release_event_cb" swapped="no"/>
+                    <signal name="key-press-event" handler="eventbox1_key_press_event_cb" swapped="no"/>
+                    <signal name="button-release-event" handler="eventbox1_button_release_event_cb" swapped="no"/>
+                    <signal name="motion-notify-event" handler="eventbox1_motion_notify_event_cb" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkArrow" id="arrow1">
+                    <property name="width_request">10</property>
+                    <property name="height_request">10</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">83</property>
+                    <property name="y">32</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkArrow" id="arrow2">
+                    <property name="width_request">10</property>
+                    <property name="height_request">10</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="arrow_type">down</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkArrow" id="arrow3">
+                    <property name="width_request">10</property>
+                    <property name="height_request">10</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="arrow_type">up</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkArrow" id="arrow4">
+                    <property name="width_request">10</property>
+                    <property name="height_request">10</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="arrow_type">left</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,176 @@
+﻿Build1=Default,b4a.OPTUMizerPhysician
+File1=bt.png
+File10=HomeModule-5ae79.png
+File11=ic_cached_white_24dp.png
+File12=ic_done_white_24dp.png
+File13=Layout1.bal
+File14=Layout2.bal
+File15=LoginModule-bf106.png
+File16=MedicalHistory-4cd35.png
+File17=NewScreen-40038.png
+File18=OPTUMizer.png
+File19=PatientProfile-12bf4.png
+File2=CalendarModule-3ab08.png
+File20=pics1.png
+File21=poweroff.png
+File22=Prescriptions-b4c1a.png
+File23=ProfileSubModule-a80b6.png
+File24=QRCodeSubModule-22420.png
+File3=datus.csv
+File4=datus2.csv
+File5=finddriver.png
+File6=finddriver1.png
+File7=finddriver2.png
+File8=frmsplash.jpg
+File9=frmusercontrol.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=core
+Library10=httputils2
+Library11=json
+Library12=zxingbarcodescanner
+Library2=stringutils
+Library3=phone
+Library4=serial
+Library5=randomaccessfile
+Library6=network
+Library7=gps
+Library8=xui
+Library9=runtimepermissions
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~'AddManifestText(~\n~'<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="14"/>~\n~'<supports-screens android:largeScreens="true" ~\n~'    android:normalScreens="true" ~\n~'    android:smallScreens="true" ~\n~'    android:anyDensity="true"/>)~\n~'SetApplicationAttribute(android:icon, "@drawable/icon")~\n~'SetApplicationAttribute(android:label, "$LABEL$")~\n~'SetApplicationAttribute(android:theme, "@android:style/Theme.Holo")~\n~'End of default text.~\n~~\n~~\n~'This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="17"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true"~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~AddManifestText(<uses-feature android:name="android.hardware.telephony" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />)~\n~AddManifestText(<uses-feature android:name="android.hardware.camera.flash" android:required="false" />)~\n~'AddPermission("android.permission.ACCESS_COARSE_LOCATION")~\n~AddPermission("android.permission.INTERNET")~\n~'AddPermission("android.permission.ACCESS_FINE_LOCATION")~\n~AddPermission("android.permission.WAKE_LOCK")~\n~AddPermission("android.permission.DEVICE_POWER")~\n~'AddPermission("android.permission.ACCESS_COARSE_UPDATES")~\n~AddPermission("android.permission.READ_PHONE_STATE")~\n~AddPermission("android.permission.VIBRATE")~\n~'AddPermission("android.permission.CAMERA")~\n~'AddPermission("android.permission.FLASHLIGHT")~\n~'AddPermission("android.hardware.camera")~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~~\n~'AddApplicationText(<activity android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden"~\n~'			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"~\n~'			android:windowSoftInputMode="stateAlwaysHidden">~\n~'		</activity>)
+Module1=bluetooth
+Module10=DQrReader
+Module11=DSchedule
+Module12=frmcontrols
+Module13=frmpatient
+Module14=frmsplash
+Module15=frmstay
+Module16=objdetect
+Module17=Starter
+Module18=Table
+Module19=vb6
+Module2=clsParser
+Module20=WTAServer
+Module3=DHome
+Module4=DLogin
+Module5=DLogs
+Module6=DPatientMedHistory
+Module7=DPatientPrescription
+Module8=DPatientProf
+Module9=DProfile
+NumberOfFiles=24
+NumberOfLibraries=12
+NumberOfModules=20
+Version=9.801
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: OPTUMizer Physician
+	#VersionCode: 1
+	#VersionName: 
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+#Region  Activity Attributes 
+	#FullScreen: True
+	#IncludeTitle: False
+#End Region
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+
+End Sub
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Private bluetooth1 As bluetooth
+	Private DLogin1 As DLogin
+	Private DHome1 As DHome
+	Private DLogs1 As DLogs
+	Private DSchedule1 As DSchedule
+	Private DProfile1 As DProfile
+	Private DQrReader1 As DQrReader
+	Private DPatientProf1 As DPatientProf
+	Private DPatientPrescription1 As DPatientPrescription
+	Private DPatientMedHistory1 As DPatientMedHistory
+	
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	If FirstTime=True Then
+		Activity.LoadLayout("Layout1")
+		'bluetooth1.SetLayout(0,0,100%x,100%y)
+		'bluetooth1.Visible=False
+		DLogin1.SetLayout(0,0,100%x,100%y)
+		DLogin1.Visible=True
+		DHome1.SetLayout(0,0,100%x,100%y)
+		DHome1.Visible=False
+		DLogs1.SetLayout(0,0,100%x,100%y)
+		DLogs1.Visible=False
+		DSchedule1.SetLayout(0,0,100%x,100%y)
+		DSchedule1.Visible=False
+		DProfile1.SetLayout(0,0,100%x,100%y)
+		DProfile1.Visible=False
+		DQrReader1.SetLayout(0,0,100%x,100%y)
+		DQrReader1.Visible=False
+		DPatientProf1.SetLayout(0,0,100%x,100%y)
+		DPatientProf1.Visible=False
+		DPatientPrescription1.SetLayout(0,0,100%x,100%y)
+		DPatientPrescription1.Visible=False
+		DPatientMedHistory1.SetLayout(0,0,100%x,100%y)
+		DPatientMedHistory1.Visible=False
+	End If
+End Sub
+
+Sub Activity_Resume
+	Starter.DLogin1=DLogin1
+	Starter.DHome1=DHome1
+	Starter.DLogs1=DLogs1
+	Starter.DSchedule1=DSchedule1
+	Starter.DProfile1=DProfile1
+	Starter.DQrReader1=DQrReader1
+	Starter.DPatientProf1=DPatientProf1
+	Starter.DPatientPrescription1=DPatientPrescription1
+	Starter.DPatientMedHistory1=DPatientMedHistory1
+	'bluetooth1.check_bluetooth'warn user to turn on bluetooth
+	If Starter.customview.Size=0 Then
+		Starter.bluetoothview1=bluetooth1
+		Starter.rp.CheckAndRequest(Starter.rp.PERMISSION_WRITE_EXTERNAL_STORAGE)
+		Wait For Activity_PermissionResult (Permission As String, Result As Boolean)
+	End If
+	
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	'ToastMessageShow("pause : " & UserClosed,False)
+
+	If UserClosed=True Then
+		ExitApplication
+	End If
+End Sub
+
+
+
